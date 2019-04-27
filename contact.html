@@ -1,0 +1,69 @@
+/****************************************
+* @author: Taylor McPherson
+* 
+* WDD Final Project, contact.html
+*****************************************
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>CONTACT</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/script/scriptContact.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img class="headerDiv" id="waveIcon" src="assets/img/handWave.svg">
+		<a class="headerDiv pages" id="h" href="index.html">HOME</a>
+		<a class="headerDiv pages" id="a" href="about.html"> ABOUT</a>
+		<a class="headerDiv pages" id="currPage" href="contact.html">CONTACT</a>
+		<a class="upArrow" href="about.html"><img src="assets/img/upArrow.svg"></a>
+	</div>
+
+	<div class="contactInner">
+		<div id="row1">
+			<div id="bCircle">
+				<div class="bigCircle" id="resumeCirc">
+					<embed id="resume" src="assets/pdf/resume.pdf" width="500px", height="400px">
+				</div>
+				<p class="bigDescrip" id="resumeDescrip">RESUME</p>
+			</div>
+			<div id="bCircle">
+				<div class="bigCircle" id="formCirc">
+					<form class="contactForm" id="formId" method="post">
+						<input id="userName" type="text" name="userName" placeholder="NAME">
+						<input id="userEmail" type="email" name="userEmail" placeholder="EMAIL">
+						<textarea id="message" type="text" name="message" placeholder="MESSAGE"></textarea>
+						<input id="submitButton" type="button" value="SEND"> 
+						<p id="formSent"> Submitted. Thanks!</p>
+					</form>
+				</div>
+				<p class="bigDescrip" id="formDescrip">CONTACT</p>
+			</div>
+		</div>
+
+		<div id="row2">
+			<div id="sCircle">
+				<a class="smallCircle" id="gitCirc" href="https://github.com/tmm2176" target="_blank"></a>
+				<p class="smallDescrip" id="gitDescrip">GITHUB</p>
+			</div>
+			<div id="sCircle">
+				<a class="smallCircle" id="photoCirc" href="https://taylormcpherson.myportfolio.com/" target="_blank"></a>
+				<p class="smallDescrip" id="photoDescrip"> PORTFOLIO</p>
+			</div>
+			<div id="sCircle">
+				<a class="smallCircle" id="instaCirc" href="https://www.instagram.com/taylormele/" target="_blank"></a>
+				<p class="smallDescrip" id="instaDescrip">INSTAGRAM</p>
+			</div>
+			<div id="sCircle">
+				<a class="smallCircle" id="roverCirc" 
+				href="https://www.rover.com/members/taylor-m-aloha-cant-wait-to-meet-your-pup/" target="_blank"></a>
+				<p class="smallDescrip" id="roverDescrip">ROVER</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

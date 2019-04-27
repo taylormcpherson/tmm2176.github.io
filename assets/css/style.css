@@ -1,0 +1,493 @@
+/****************************************
+* @author: Taylor McPherson
+* 
+* WDD Final Project, style.css
+*****************************************
+/***************************************
+*          Site-Wide STYLES
+****************************************/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E1E6DE;
+	margin:0;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color:#768277;
+}
+
+a {
+	text-decoration: none;
+	color: #768277;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-top: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+
+#waveIcon {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	animation: handWave 1s infinite;
+	margin-right: 20px;
+}
+
+#waveIcon:hover {
+	opacity: 1;
+	cursor: default;
+	border-bottom: none;
+}
+
+.upArrow {
+	display: flex;
+	margin-left: 9.8%;
+	margin-right: 50%;
+	margin-top: 2%;
+	width: 48px;
+	height: 32px;
+}
+
+.upArrow:hover {
+	transform: translateY(-2px);
+	cursor: pointer;
+	opacity: 0.5;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.downArrow {
+	display: flex;
+	width: 48px;
+	height: 32px;
+}
+
+.downArrow:hover {
+	transform: translateY(2px);
+	cursor: pointer;
+	opacity: .5;
+}
+
+
+.innerDiv {
+	margin-top: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+
+.footer {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	margin-left: 45%;
+}
+
+
+/******************************************
+*          Home Page STYLES
+******************************************/
+
+#greeting {
+	overflow: hidden;
+	white-space: nowrap;
+	letter-spacing: .15vw; 
+	font-size: 1.5vw;
+	margin-right: 100%;
+	margin-bottom: 2%;
+	border-right: .099em solid orange; /* typeCursor color */
+	animation: typing 4s steps(40, end) 0.5s infinite, typeCursor 0.8s steps(70) infinite;
+
+}
+
+#greeting:hover {
+	cursor: default;
+}
+
+#name {
+	font-size: 1.9vw;
+	cursor: pointer;
+	color: #C9A07B;
+}
+
+#name:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+
+#leftCol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	margin-top: 3%;
+	margin-left: 24%;
+	margin-right: 8%;
+
+}
+
+.descriptors {
+	display: flex;
+	font-style: normal;
+	flex-wrap: nowrap;
+	font-weight: 300;
+	font-size: 2.4vw;
+	line-height: normal;
+	margin-top: .5%;
+}
+
+.descriptors:hover {
+	font-weight: 350; 
+	cursor: default;
+}
+
+
+#rightCol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-right: 4%;
+	margin-left: 4%;
+	margin-bottom: 7%;
+}
+
+.ills {
+	display: none;
+	align-items: flex-start;
+	width: 80%;
+	height:  80%;
+	margin-top: 30%;
+}
+
+#img1, #img2, #img3, #img4, #img5 {
+	display: none;
+}
+
+#homeFooter {
+	margin-top: 0;	
+}
+
+
+/**********************************
+*      Home Page ANIMATIONS 
+************************************/
+
+@keyframes handWave {
+	0% {
+        transform: rotate(0deg);
+        
+    }
+    
+    50% {
+        transform: rotate(60deg);
+        
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/* @Source for typing and typeCursor: CSS-Tricks - Typewriter effect
+	https://css-tricks.com/snippets/css/typewriter-effect/
+ */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+  	to {
+  		width: 100%;
+  	}
+}
+@keyframes typeCursor {
+  0%, 100%{
+  	border-color: transparent; 
+  }
+  50% {
+  	border-color: #768277;
+  }
+}
+
+/*****************************************
+*    About/Contact Page Shared STYLES
+******************************************/
+
+.headerDiv {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	white-space: nowrap;
+	letter-spacing: .15em; 
+	font-size: 1.5vw;
+	margin-right: 2%;
+	border-right: .099em; /* typeCursor color */
+
+}
+
+.headerDiv:hover {
+	cursor: pointer;
+	border-bottom: 4px solid #BAC3BB;
+}
+
+.pages {
+	margin-bottom: 1%;
+}
+
+#currPage {
+	color: #C9A07B;
+}
+
+#currPage:hover {
+	opacity: 1;
+}
+
+/*****************************************
+*          About Page STYLES
+******************************************/
+
+#words {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#aboutWords {
+	font-size: 1.5vw;
+	font-weight: 200;
+	padding-left: 120px;
+	padding-right: 50px;
+}
+
+#finePrint {
+	font-size: .9vw;
+	padding-top: 1%;
+	padding-left: 120px;
+	padding-right: 50px;
+
+}
+
+#bold {
+	font-weight: 400;
+}
+
+#pageLink {
+	font-weight: 400;
+}
+#pageLink:hover {
+	pointer: cursor;
+	font-weight: 400;
+	color: #C9A07B;
+}
+
+#selfPic {
+	margin-right: 150px;
+	border-radius: 50%;
+}
+
+#aboutInner {
+	margin-top: 3%;
+	align-items: center;
+}
+
+
+/*****************************************
+*          Contact Page STYLES
+******************************************/
+
+.contactInner {
+	display: flex;
+	flex-direction: column;
+
+}
+
+#row1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: 25.8%;
+	margin-right: 24%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+#bCircle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+.bigCircle {
+	display: flex;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #BAC3BB;
+}
+
+.bigCircle:hover {
+	opacity: .5;
+	cursor: pointer;
+	background-color: #FFDFC2;
+	box-shadow: 2px 2px 8px 2px #768277;
+}
+
+#bigDescrip {
+	display: flex;
+	font-size: 14px;
+}
+
+#resume {
+	display: none;
+	box-shadow: 2px 2px 8px 2px #768277;
+}
+
+#resume:hover {
+	opacity: 1;
+	cursor: default;
+}
+
+.contactForm {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 2px 2px 8px 2px #768277;
+	width: 350px;
+	height: 380px;
+	border-radius: 15%;
+	padding-top: 7%;
+	outline: none;
+}
+
+::placeholder {
+	color: #BAC3BB; }
+
+.contactForm input[type="text"], .contactForm input[type="email"]{
+	width: 80%;
+	height: 15%;
+	margin-left: 9%;
+	margin-top: 5%;
+	margin-right: 5%;
+	outline: none;
+	background: #F6FAF4;
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	color: #768277;
+	border: .5px solid transparent;
+
+}
+
+.contactForm textarea[type="text"] {
+	width: 80%;
+	height: 15%;
+	margin-left: 9%;
+	margin-top: 5%;
+	margin-right: 5%;
+	outline: none;
+	background: #F6FAF4;
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	resize: none;
+	padding-top: 5%;
+	color: #768277;
+	border: .5px solid transparent;
+}
+
+.contactForm input[type="button"] {
+	width: 82%;
+	height: 10%;
+	margin-left: 8.8%;
+	margin-top: 5%;
+	margin-right: 5%;
+	background: #D0DEDB;
+	outline: none;
+	text-align: center;
+	font-size: 1.5em;
+	box-shadow: 2px 2px 8px 2px #768277;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	color: #768277;
+	border: .5px solid transparent;
+}
+
+#userName:hover, #userEmail:hover, #message:hover {
+	border: .5px solid #C9A07B;
+}
+
+#submitButton:hover {
+	background-color: #BFCCC9;
+	box-shadow: 2px 2px 8px 2px #C9A07B;
+
+}
+#submitButton:active {
+	transform: translateY(2px);
+}
+
+#formSent {
+	display: none;
+	width: 82%;
+	height: 10%;
+	margin-left: 8.8%;
+	margin-top: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+#row2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: 24.8%;
+	margin-right: 24%;
+	margin-top: 3%;
+}
+
+#sCircle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 8%;
+	padding-right: 4%;
+}
+
+.smallCircle {
+	display: flex;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #BFCCC9;
+}
+
+.smallCircle:hover {
+	opacity: .5;
+	cursor: pointer;
+	background-color: #FFDFC2;
+	box-shadow: 2px 2px 8px 2px #768277;
+}
+
+.smallDescrip {
+	display: flex;
+	font-size: 10px;
+	align-items: center;
+}
+
+
+
+
