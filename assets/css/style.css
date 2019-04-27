@@ -178,7 +178,7 @@ a {
 }
 
 #homeFooter {
-	margin-top: 0;	
+	margin-top: 0;
 }
 
 
@@ -385,7 +385,7 @@ a {
 	outline: none;
 	background: #F6FAF4;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1vw;
 	font-family: 'Roboto', sans-serif;
 	color: #768277;
 	border: .5px solid transparent;
@@ -401,7 +401,7 @@ a {
 	outline: none;
 	background: #F6FAF4;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1vw;
 	font-family: 'Roboto', sans-serif;
 	resize: none;
 	padding-top: 5%;
@@ -418,7 +418,7 @@ a {
 	background: #D0DEDB;
 	outline: none;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.5vw;
 	box-shadow: 2px 2px 8px 2px #768277;
 	cursor: pointer;
 	font-family: 'Roboto', sans-serif;

@@ -84,8 +84,8 @@ $(document).ready(function() {
 function resumeView() {
 	$("#resume").fadeIn();
 	$("#resumeCirc").show();
-	$("#row1").css({"margin-left": "30%", "margin-right": "50%", "margin-top": "0px", "margin-bottom": "10%"});
-	$("#bCircle").css({"padding": "0px", "margin": "0px"});
+	$("#row1").css({"margin-left": "25%", "margin-right": "50%", "margin-top": "0px", "margin-bottom":"1%"});
+	$("#bigCircle").css({"padding": "0px", "margin":"0"});
 	$("#resumeCirc").css({"width": "100%", "height": "100%", "border-radius": "0", 
 			"margin": "0px", "opacity": "1"});
 }
@@ -93,7 +93,7 @@ function resumeView() {
  function formView() {
  	$(".contactForm").fadeIn();
  	$("#formCirc").show();
- 	$("#row1").css({"margin-left": "33%", "margin-right": "50%", "margin-top": "0px"});
+ 	$("#row1").css({"margin-left": "31.8%", "margin-right": "50%", "margin-top": "0px"});
  	$("#bCircle").css({"padding": "0px", "margin": "0px"});
  	$("#formCirc").css({"width": "100%", "height": "100%", "border-radius": "15%", 
  			"margin": "0", "opacity": "1"});
@@ -114,6 +114,6 @@ function denoise() {
 	$(".bigCircle").hide();
 	$(".bigDescrip").hide();
 	$("#row2").hide();
-	$("#upArrow").hide();
+	$(".upArrow").hide();
 }
 
